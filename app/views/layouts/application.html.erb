@@ -4,12 +4,26 @@
     <title>Uzduotis</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <h1 class="middle_centered_text">
+      <a href="../main/index">PI18 tvarkarasciai</a>
+      </h1>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
 
   <body>
+    <div class="w3-bar w3-black">
+      <a href="../main/pi18a" class="w3-bar-item w3-button">PI18A</a>
+      <a href="../main/pi18b" class="w3-bar-item w3-button">PI18B</a>
+      <a href="../main/pi18c" class="w3-bar-item w3-button">PI18C</a>
+      <a href="../main/pi18e" class="w3-bar-item w3-button">PI18E</a>
+      <a href="../info_about/info" class="w3-bar-item w3-button">Informacija apie kolegijos fakulteta</a>
+    </div>
+
+
     <%= yield %>
+
+
   </body>
 </html>
